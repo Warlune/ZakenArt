@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<?php require 'header.php'; ?>
+<div class="mainwrap">
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#slides" data-slide-to="0" class="active"></li>
+    <li data-target="#slides" data-slide-to="1"></li>
+    <li data-target="#slides" data-slide-to="2"></li>
+  </ol>
+ <div class="carousel_inner">
+  <div class="carousel-item active">
+    <img class="carousel-img" src="img/cc.png" alt="art">
+    <div class="black-overlay"></div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-img" src="img/aa.png" alt="art">
+    <div class="black-overlay"></div>
+  </div>
+  <div class="carousel-item">
+    <img class="carousel-img" src="img/bb.png" alt="art">
+    <div class="black-overlay"></div>
+  </div>
+ </div>
+ </div>
+<div class="carousel-caption">
+  <h1 class="display-2">ZakenArt</h1>
+  <a href="gallery.php"> <button type="button" class="btn btn-outline-light btn-lg">View Art</button></a>
+  <button style="animation-name:none;" type="button" class="btn btn-secondary btn-lg">About Me</button>
+</div>
+</div>
+<div class="container-fluid">
+  <div class="row jumbotron">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <h3>Want to see more art?</h3>
+        <p class="lead">Come follow my blog where I keep fans and customers updated about sales and new art.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+        <a href="signup.php"> <button id='blogbtn' type="button" class="btn btn-outline-secondary btn-lg">Sign up!</button> </a>
+
+      </div>
+    </div>
+  </div>
+
+    <hr class="my-4">
+
+  </div>
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-12 col-lg-6" style='padding-left:3rem;'>
+        <h2>The Age Of Crypto Art</h2>
+        <h5>museums may be losing their luster and physical media cannot be immortilized</h5>
+        <p>thus the age of art on the blockchain was born. a way to prserve sell and collect art online. </p>
+        <p>Art created on the chain can be traded for crypto-currency and your art can also make commision if ur art is conntinually traded on the chain</p>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Crypto_art" class="btn btn-secondary" target="_blank">Crypto art</a>
+      </div>
+      <div  class="text-center col-lg-6">
+        <img id="parapic" src="img/5.jpg" class="img-fluid">
+
+      </div>
+
+    </div>
+
+  </div>
+  <button class="fun btn btn-secondary" type="button" data-toggle="collapse" data-target='#crypto'>Click to explore</button>
+  <div id='crypto' class="collapse">
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-sm-6 col-md-3">
+          <img class="gif" src='img/opensea.jpg'>
+
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="gif" src='img/superrare.jpg'>
+
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="gif" src='img/portion.png'>
+
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="gif" src='img/bitcoin.png'>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+  <hr class="my-4">
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Get Connected!!</h1>
+
+      </div>
+      <hr>
+      <div class="col-12">
+        <p class="lead">follow me on my way to become next hokage.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fa fa-facebook-square"></i>
+        <h3>Facebook</h3>
+        <p>jshdjashdjashdjahdajhl</p>
+
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fa fa-instagram"></i>
+        <h3>Instagram</h3>
+        <p>jshdjashdjashdjahdajhl</p>
+
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4">
+        <i class="fa fa-twitter-square"></i>
+        <h3>Twitter</h3>
+        <p>jshdjashdjashdjahdajhl</p>
+
+      </div>
+    </div>
+  </div>
+  <hr class="my-4">
+  <figure>
+    <div class="fixed-wrap">
+      <div id="fixed">
+
+      </div>
+
+    </div>
+  </figure>
+
+      <div class="container-fluid padding">
+        <div class="row welcome text-center">
+          <div class="col-12">
+            <h1 class="display-4">Want to get ahold of me??</h1>
+
+          </div>
+          <hr>
+          <div class="col-12">
+            <p class="lead">contact me in the form below</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid padding">
+        <div class="row text-center padding">
+          <div class="col-12 bg-light">
+            <form class="contact-form" action="includes/contact.inc.php" method="post">
+              <input type="text" name="conName" placeholder="Full Name">
+              <input type="text" name="conMail" placeholder="E-Mail Address">
+              <input type="text" name="conPhone" placeholder="Phone">
+              <br><br>
+              <textarea id="subject" name="conInfo" placeholder="Write something.."></textarea>
+              <br>
+              <input type="submit" name="contact-submit" class="btn btn-secondary">
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+<?php require 'footer.php'; ?>
