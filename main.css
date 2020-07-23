@@ -141,7 +141,7 @@ padding-right: 5px;
   background-color: gray;
 }
 .carousel-img {
-  height: 850px;
+  height: 100%;
   width: 100%;
   width: auto   9;
   vertical-align: middle;
@@ -153,11 +153,12 @@ padding-right: 5px;
   transition-duration: 3s;
 }
 .carousel-caption{
-  position: absolute;
 
-  top: 25%;
-  margin-left: auto;
-  margin-right: auto;
+
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
 
 .black-overlay {
@@ -196,7 +197,7 @@ input[type=text],textarea,input[type=password]{
   margin-bottom: 2rem;
 }
 #fixed  {
-  background-image: url('img/bb.png');
+  background-image: url('img/sticky.png');
   height: 600px;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -211,4 +212,8 @@ input[type=text],textarea,input[type=password]{
 }
 .text-danger {
   border-radius: 1.5rem;
+}
+.black-overlay {
+  width:100%;
+  height: 100%;
 }

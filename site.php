@@ -10,15 +10,28 @@
   </ol>
  <div class="carousel_inner">
   <div class="carousel-item active">
-    <img class="carousel-img" src="img/cc.png" alt="art">
+      <picture>
+        <source media="(min-width: 650px)" srcset="img/a.jpg">
+        <source media="(min-width: 575px)" srcset="img/aaa.jpg">
+        <img class="carousel-img" src="img/aaa.jpg" alt="art">
+      </picture>
+    <!-- <img class="carousel-img" src="img/a.jpg" alt="art"> -->
     <div class="black-overlay"></div>
   </div>
   <div class="carousel-item">
-    <img class="carousel-img" src="img/aa.png" alt="art">
+    <picture>
+      <source media="(min-width: 650px)" srcset="img/b.jpg">
+      <source media="(min-width: 575px)" srcset="img/bbb.jpg">
+      <img class="carousel-img" src="img/bbb.jpg" alt="art">
+    </picture>
     <div class="black-overlay"></div>
   </div>
   <div class="carousel-item">
-    <img class="carousel-img" src="img/bb.png" alt="art">
+    <picture>
+      <source media="(min-width: 650px)" srcset="img/c.jpg">
+      <source media="(min-width: 575px)" srcset="img/ccc.jpg">
+      <img class="carousel-img" src="img/ccc.jpg" alt="art">
+    </picture>
     <div class="black-overlay"></div>
   </div>
  </div>

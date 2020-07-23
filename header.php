@@ -26,7 +26,7 @@
             if ($_SESSION['isAdmin'] == 1) {
               echo '<a class="navbar-brand" href="site.php"><img alt="Brand"src="img/admin.png" class="image-responsive"> </a>';
             }else {
-              echo '<a class="navbar-brand" href="site.php"><img alt="Brand"src="img/logo.png" class="image-responsive"> </a>';
+              echo '<a class="navbar-brand" href="site.php"><img alt="Brand"src="img/1.png" class="image-responsive"> </a>';
             }
         echo  '<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@
              </div>';
             }
         }else {
-          echo '<a class="navbar-brand" href="site.php"><img alt="Brand"src="img/logo.png" class="image-responsive"> </a>
+          echo '<a class="navbar-brand" href="site.php"><img alt="Brand"src="img/1.png" class="image-responsive"> </a>
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon"></span>
             </button>
