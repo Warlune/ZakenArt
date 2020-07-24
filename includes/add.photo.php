@@ -29,7 +29,7 @@ if (isset($_POST['photo-submit'])) {
        $imageFullName = $newFileName . "." . uniqid("", true). "." . $fileActualExt;
        $fileDestination = "../img/art/" . $imageFullName;
 
-       include_once "dbh.gallery.php";
+       include_once "dbh.inc.php";
        if (empty($imgDesc) || empty($imgDim)) {
          header("Location: gallery.php?upload=empty");
          exit();
@@ -45,15 +45,18 @@ if (isset($_POST['photo-submit'])) {
            $rowCount = mysqli_num_rows($result);
            $setImgOrder = $rowCount + 1;
 
-           $sql = "INSERT INTO gallery (titlegallery, descGallery, dimGallery) VALUES (?, ?, ?);";
+           $sql = "INSERT INTO gallery (titleGallery, descGallery, dimGallery) VALUES (?, ?, ?);";
            if (!mysqli_stmt_prepare($stmt, $sql)) {
              header("Location: gallery.php?sqlerror=stmtfail");
              exit();
            } else {
-             mysqli_stmt_bind_param($stmt, "sss", $imageFullName, $imgDesc, $imgDim );
+             mysqli_stmt_bind_param($stmt, "sss", $imageFullName, $imgDesc, $imgDim);
              mysqli_stmt_execute($stmt);
-
-             move_uploaded_file($fileTmp, $fileDestination);
+             if ( move_uploaded_file($fileTmp, $fileDestination)) {
+               echo $fileDestination;
+             }else {
+               echo "didnt work";
+             }
              header("Location: ../gallery.php?upload=success");
 
            }

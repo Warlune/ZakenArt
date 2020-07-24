@@ -7,6 +7,7 @@ if (isset($_POST['signup-submit'])) {
   $email = $_POST['mail'];
   $password = $_POST['pwd'];
   $passwordRepeat = $_POST['pwd-rp'];
+  $admin = 0;
 // checks is form is empty
   if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
     // sends back info they already typed
@@ -32,7 +33,7 @@ if (isset($_POST['signup-submit'])) {
     exit();
   } else {
     // connecting to sql checking for repeat username or accounts
-    $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
+    $sql = "SELECT uidUsers FROM login WHERE uidUsers=?";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
       header("location: ../signup.php?error=sqlerror");
@@ -46,14 +47,14 @@ if (isset($_POST['signup-submit'])) {
         header("location: ../signup.php?error=usertaken&mail=".$email);
         exit();
       }else {
-        $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO login (uidUsers, emailUsers, pwdUsers, admin) VALUES (?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
           header("location: ../signup.php?error=sqlerror");
           exit();
         }else {
           $hashedpwd = password_hash($password, PASSWORD_DEFAULT);
-          mysqli_stmt_bind_param($stmt,"sss", $username, $email, $hashedpwd );
+          mysqli_stmt_bind_param($stmt,"ssss", $username, $email, $hashedpwd, $admin );
           mysqli_stmt_execute($stmt);
           header("location: ../signup.php?signup=success");
           exit();

@@ -2,7 +2,7 @@
 
 <?php
   if (isset($_SESSION['userId']) && ($_SESSION['isAdmin'] == 1)) {
-include_once 'includes/dbh.contact.php';
+include_once 'includes/dbh.inc.php';
 
 $sql = "SELECT * FROM contact ORDER BY conId DESC";
 $stmt = mysqli_stmt_init($conn);

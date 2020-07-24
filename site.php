@@ -11,7 +11,7 @@
  <div class="carousel_inner">
   <div class="carousel-item active">
       <picture>
-        <source media="(min-width: 650px)" srcset="img/a.jpg">
+        <source media="(min-width: 780px)" srcset="img/a.jpg">
         <source media="(min-width: 575px)" srcset="img/aaa.jpg">
         <img class="carousel-img" src="img/aaa.jpg" alt="art">
       </picture>
@@ -20,7 +20,7 @@
   </div>
   <div class="carousel-item">
     <picture>
-      <source media="(min-width: 650px)" srcset="img/b.jpg">
+      <source media="(min-width: 780px)" srcset="img/b.jpg">
       <source media="(min-width: 575px)" srcset="img/bbb.jpg">
       <img class="carousel-img" src="img/bbb.jpg" alt="art">
     </picture>
@@ -28,7 +28,7 @@
   </div>
   <div class="carousel-item">
     <picture>
-      <source media="(min-width: 650px)" srcset="img/c.jpg">
+      <source media="(min-width: 780px)" srcset="img/c.jpg">
       <source media="(min-width: 575px)" srcset="img/ccc.jpg">
       <img class="carousel-img" src="img/ccc.jpg" alt="art">
     </picture>
@@ -69,7 +69,7 @@
         <a href="https://en.wikipedia.org/wiki/Crypto_art" class="btn btn-secondary" target="_blank">Crypto art</a>
       </div>
       <div  class="text-center col-lg-6">
-        <img id="parapic" src="img/5.jpg" class="img-fluid">
+        <img id="parapic" src="img/d.jpg" class="img-fluid">
 
       </div>
 
@@ -81,7 +81,7 @@
     <div class="container-fluid padding">
       <div class="row text-center">
         <div class="col-sm-6 col-md-3">
-          <img class="gif" src='img/opensea.jpg'>
+          <img class="gif" src='img/opensea.png'>
 
         </div>
         <div class="col-sm-6 col-md-3">
@@ -93,7 +93,7 @@
 
         </div>
         <div class="col-sm-6 col-md-3">
-          <img class="gif" src='img/bitcoin.png'>
+          <img class="gif" src='img/bitcoin.jpg'>
 
         </div>
 

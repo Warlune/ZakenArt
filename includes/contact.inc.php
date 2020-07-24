@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['contact-submit'])) {
 
-  require_once 'dbh.contact.php';
+  require 'dbh.inc.php';
 
   $conName = $_POST['conName'];
   $conMail = $_POST['conMail'];

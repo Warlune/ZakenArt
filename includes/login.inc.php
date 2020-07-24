@@ -12,7 +12,7 @@ if (empty($mail) || empty($password)) {
 }else {
   //use placeholders ? and prepared staatements for security
   // this just checks if it works for the DB
-  $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?;";
+  $sql = "SELECT * FROM login WHERE uidUsers=? OR emailUsers=?;";
   $stmt = mysqli_stmt_init($conn);
   if (!mysqli_stmt_prepare($stmt, $sql)) {
       header("location: ../site.php?error=sqlerror");
@@ -40,7 +40,7 @@ if (empty($mail) || empty($password)) {
         exit();
       }
     }else {
-      header("location: ../site.php?error=wrongpassword");
+      header("location: ../site.php?error=wrongpassword1");
       exit();
     }
 

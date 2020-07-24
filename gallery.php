@@ -34,8 +34,7 @@
 </div>
 <div class="gallery" id="gallery">
 <?php
-
-include_once 'includes/dbh.gallery.php';
+include_once 'includes/dbh.inc.php';
 
 $sql = "SELECT * FROM gallery ORDER BY idGallery DESC";
 $stmt = mysqli_stmt_init($conn);
@@ -47,7 +46,7 @@ $stmt = mysqli_stmt_init($conn);
 
     while ($row = mysqli_fetch_assoc($result)) {
       echo ' <div class="mb-3 pics animation all '.$row['dimGallery'].'">
-               <img class="img-fluid" src="img/art/'.$row['titlegallery'].'" alt="'.$row['descGallery'].'">
+               <img class="img-fluid" src="img/art/'.$row['titleGallery'].'" alt="'.$row['descGallery'].'">
              </div>';
     }
   }
