@@ -36,14 +36,23 @@
   </div>
  </div>
  </div>
-<div class="carousel-caption">
-  <h1 class="display-2">ZakenArt</h1>
-  <a href="gallery.php"> <button type="button" class="btn btn-outline-light btn-lg">View Art</button></a>
-  <button style="animation-name:none;" type="button" class="btn btn-secondary btn-lg">About Me</button>
+ <div class="carousel-caption">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h3 class="display-2">Zaken-Art</h3>
+    </div>
+    <div class="col-6">
+      <a href="gallery.php"> <button type="button" class="btn btn-outline-light btn-lg">View Art</button></a>
+    </div>
+    <div class="col-6">
+      <button style="animation-name:none;" type="button" class="btn btn-secondary btn-lg">About Me</button>
+    </div>
+    </div>
+</div>
 </div>
 </div>
 <div class="container-fluid">
-  <div class="row jumbotron">
+  <div class="row jumbotron padding">
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
         <h3>Want to see more art?</h3>
         <p class="lead">Come follow my blog where I keep fans and customers updated about sales and new art.</p>
@@ -58,17 +67,17 @@
     <hr class="my-4">
 
   </div>
-  <div class="container-fluid padding">
-    <div class="row padding">
-      <div class="col-md-12 col-lg-6" style='padding-left:3rem;'>
+  <div class="container-fluid padding crypto">
+    <div class="row padding ">
+      <div class="col-md-12 col-lg-5">
         <h2>The Age Of Crypto Art</h2>
         <h5>museums may be losing their luster and physical media cannot be immortilized</h5>
         <p>thus the age of art on the blockchain was born. a way to prserve sell and collect art online. </p>
         <p>Art created on the chain can be traded for crypto-currency and your art can also make commision if ur art is conntinually traded on the chain</p>
         <br>
-        <a href="https://en.wikipedia.org/wiki/Crypto_art" class="btn btn-secondary" target="_blank">Crypto art</a>
+        <a href="https://en.wikipedia.org/wiki/Crypto_art" class="btn btn-secondary text-center" target="_blank">Crypto art</a>
       </div>
-      <div  class="text-center col-lg-6">
+      <div  class="text-center col-lg-7">
         <img id="parapic" src="img/d.jpg" class="img-fluid">
 
       </div>

@@ -15,7 +15,7 @@
 
     <title>ZakenArt</title>
   </head>
-  <body>
+  <body style="overflow:hidden;">
     <header class="sticky-top" >
       <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 
