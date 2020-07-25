@@ -69,9 +69,10 @@
               <!-- <li class="navbar-item"><a href="buy.php" class="navbar-link btn bg-danger">Buy Now! </a></li> -->
             </ul>
             <div class="loginpwd">
-             <form action="includes/login.inc.php" method="post">
+             <form action="includes/login.inc.php" method="post" class="text-center">
               <input type="text" name="mailuid" placeholder="Username/E-Mail">
               <input type="password" name="pass" placeholder="Password">
+
               <button type="submit" class="btn btn-secondary" name="login-submit">Login</button>
               <a class="bg-light navbar-link" href="signup.php" >Signup</a>
               </form>

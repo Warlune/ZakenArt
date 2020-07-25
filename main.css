@@ -159,7 +159,7 @@ padding-right: 5px;
 
 
     text-align: center;
-    top: 50%;
+    top: 52%;
     transform: translateY(-50%);
 
 }
@@ -175,10 +175,7 @@ padding-right: 5px;
   right:0;
 }
 #parapic{
-  max-height: 500px;
-  width:50%;
-  border-style: 10px gray;
-  margin-top: 2rem;
+  padding: 2rem;
 }
 #artsig{
   margin-left: auto;
@@ -190,6 +187,7 @@ padding-right: 5px;
 #subject {
   height: 200px;
   width:60%;
+  min-width: 250px;
 }
 input[type=text],textarea,input[type=password]{
   padding: 8px;
@@ -224,4 +222,13 @@ input[type=text],textarea,input[type=password]{
 }
 .crypto {
   padding-left: 2rem;
+}
+.gif  {
+  padding: 2rem;
+}
+#viewme{
+  float: left;
+}
+#viewme{
+  float: right ;
 }

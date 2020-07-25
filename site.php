@@ -36,16 +36,16 @@
   </div>
  </div>
  </div>
- <div class="carousel-caption">
+ <div class="carousel-caption text-center">
     <div class="row text-center padding">
       <div class="col-12">
-        <h3 class="display-2">Zaken-Art</h3>
+        <h3 class="display-3">Zaken-Art</h3>
     </div>
-    <div class="col-6">
-      <a href="gallery.php"> <button type="button" class="btn btn-outline-light btn-lg">View Art</button></a>
+    <div class="col-6 text-right">
+      <a id="viewart" href="gallery.php"> <button type="button" class="btn btn-outline-light btn-lg">View Art</button></a>
     </div>
-    <div class="col-6">
-      <button style="animation-name:none;" type="button" class="btn btn-secondary btn-lg">About Me</button>
+    <div class="col-6 text-left">
+      <button  style="animation-name:none;" type="button" class="btn btn-secondary btn-lg">About Me</button>
     </div>
     </div>
 </div>
@@ -75,7 +75,7 @@
         <p>thus the age of art on the blockchain was born. a way to prserve sell and collect art online. </p>
         <p>Art created on the chain can be traded for crypto-currency and your art can also make commision if ur art is conntinually traded on the chain</p>
         <br>
-        <a href="https://en.wikipedia.org/wiki/Crypto_art" class="btn btn-secondary text-center" target="_blank">Crypto art</a>
+        <a href="https://en.wikipedia.org/wiki/Crypto_art" class="btn btn-secondary" target="_blank">Crypto art</a>
       </div>
       <div  class="text-center col-lg-7">
         <img id="parapic" src="img/d.jpg" class="img-fluid">
@@ -116,7 +116,7 @@
   <div class="container-fluid padding">
     <div class="row welcome text-center">
       <div class="col-12">
-        <h1 class="display-4">Get Connected!!</h1>
+        <h2 class="display-5">Get Connected</h2>
 
       </div>
       <hr>
