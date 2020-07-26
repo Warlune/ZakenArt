@@ -49,11 +49,12 @@ $stmt = mysqli_stmt_init($conn);
       while ($row = mysqli_fetch_assoc($result)) {
         echo ' <div class="mb-3 pics animation all '.$row['dimGallery'].'">
                  <img class="img-fluid" src="img/art/'.$row['titleGallery'].'" alt="'.$row['descGallery'].'">
-                  <div class="black-overlay"></div>
+                  <div class="black-overlay text-center">  <input type="hidden" name="remName" value="'.$row['titleGallery'].'">
+                    <input value="Delete"  onclick="'.$starter.$row['dimGallery'].$row['idGallery'].'()" id="'.$row['dimGallery'].$row['idGallery'].'" type="submit" name="remove-submit" class="btn btn-secondary"></div>
+
                </div>
                <form class="remove-form" action="includes/remove.photo.php" method="post">
-                    <input type="text" name="remName" value="'.$row['titleGallery'].'">
-                    <input onclick="'.$starter.$row['dimGallery'].$row['idGallery'].'()" id="'.$row['dimGallery'].$row['idGallery'].'" type="submit" name="remove-submit" class="btn btn-secondary">
+
                </form>
                <script>
                   function '.$starter.$row['dimGallery'].$row['idGallery'].'() {
