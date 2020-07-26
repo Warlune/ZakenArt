@@ -51,8 +51,19 @@ $stmt = mysqli_stmt_init($conn);
                </div>
                <form class="remove-form" action="includes/remove.photo.php" method="post">
                     <input type="text" name="remName" value="'.$row['titleGallery'].'">
-                    <input type="submit" name="remove-submit" class="btn btn-secondary">
-               </form>';
+                    <input onclick="uSure()" id="rSubmit" type="submit" name="remove-submit" class="btn btn-secondary">
+               </form>
+               <script>
+                  function uSure() {
+                    var r = confirm("Are you sure you want to remove this photo?");
+                    if (r == true) {
+
+                    } else {
+                      document.getElementById("rSubmit").disabled = true;
+                    }
+
+                  }
+                  </script>';
              }
     }else{
       while ($row = mysqli_fetch_assoc($result)) {
