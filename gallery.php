@@ -36,6 +36,7 @@
 <?php
 include_once 'includes/dbh.inc.php';
 
+
 $sql = "SELECT * FROM gallery ORDER BY idGallery DESC";
 $stmt = mysqli_stmt_init($conn);
   if (!mysqli_stmt_prepare($stmt,$sql)) {
@@ -44,6 +45,7 @@ $stmt = mysqli_stmt_init($conn);
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
     if (isset($_SESSION['userId']) && ($_SESSION['isAdmin'] == 1)) {
+      $starter = "a";
       while ($row = mysqli_fetch_assoc($result)) {
         echo ' <div class="mb-3 pics animation all '.$row['dimGallery'].'">
                  <img class="img-fluid" src="img/art/'.$row['titleGallery'].'" alt="'.$row['descGallery'].'">
@@ -51,15 +53,16 @@ $stmt = mysqli_stmt_init($conn);
                </div>
                <form class="remove-form" action="includes/remove.photo.php" method="post">
                     <input type="text" name="remName" value="'.$row['titleGallery'].'">
-                    <input onclick="uSure()" id="rSubmit" type="submit" name="remove-submit" class="btn btn-secondary">
+                    <input onclick="'.$starter.$row['dimGallery'].$row['idGallery'].'()" id="'.$row['dimGallery'].$row['idGallery'].'" type="submit" name="remove-submit" class="btn btn-secondary">
                </form>
                <script>
-                  function uSure() {
+                  function '.$starter.$row['dimGallery'].$row['idGallery'].'() {
                     var r = confirm("Are you sure you want to remove this photo?");
-                    if (r == true) {
-
+                    if (r == false) {
+                      document.getElementById("'.$row['dimGallery'].$row['idGallery'].'").disabled = true;
+                      location.reload(true)
                     } else {
-                      document.getElementById("rSubmit").disabled = true;
+
                     }
 
                   }
